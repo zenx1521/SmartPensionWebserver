@@ -35,19 +35,19 @@ RSpec.describe StatisticsCalculator do
     }
   end
 
-  it "checks if most_viewed field size is correct" do
+  it "Checks if most_viewed field size is correct" do
     expect(statistics_calculator.most_viewed.size).to eq(4)
   end
 
-  it "checks if most_viewed statistics are counted correctly" do
+  it "Checks if most_viewed statistics are counted correctly" do
     expect(statistics_calculator.most_viewed.to_h).to eq(most_viewed_example_stats)
   end
 
-  it "checks if most_unique_viewed field size is correct" do
+  it "Checks if most_unique_viewed field size is correct" do
     expect(statistics_calculator.most_unique_viewed.size).to eq(4)
   end
 
-  it "checks if most_unique_viewed statistics are counted correctly" do
+  it "Checks if most_unique_viewed statistics are counted correctly" do
     expect(statistics_calculator.most_unique_viewed.to_h).to eq(most_unique_viewed_example_stats)
   end
 end

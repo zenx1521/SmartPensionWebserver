@@ -9,14 +9,14 @@ class StatisticsPrinter
   def print_most_viewed_pages
     puts "Most Viewed Pages"
     most_viewed.each do |key,value|
-        puts "#{key} : #{value}"
+      puts "#{key} : #{value}"
     end
   end
 
   def print_most_viewed_unique_pages
     puts "Most unique viewed pages"
     most_unique_viewed.each do |key,value|
-        puts "#{key} : #{value}"
+      puts "#{key} : #{value}"
     end
   end
 end
