@@ -14,16 +14,16 @@ class Parser
   private
 
   def parse
-    @values = {}
+    parsed_values = {}
 
     file.each do |line|
       address, ip = line.strip.match(PATTERN).captures
 
-      @values[address] ||= {}
-      @values[address][ip] ||= 0
-      @values[address][ip] += 1
+      parsed_values[address] ||= {}
+      parsed_values[address][ip] ||= 0
+      parsed_values[address][ip] += 1
     end
 
-    @values
+    parsed_values
   end
 end
