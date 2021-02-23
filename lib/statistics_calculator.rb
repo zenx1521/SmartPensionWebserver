@@ -21,7 +21,7 @@ class StatisticsCalculator
     @most_viewed = {}
     @most_unique_viewed = {}
 
-    @values.each do |key,val|
+    values.each do |key,val|
       @most_viewed[key] = val.values.sum
       @most_unique_viewed[key] = val.keys.count
     end
